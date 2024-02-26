@@ -4,10 +4,10 @@ project(lab_1)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(
-        lab_1 main.cpp
+        lab_1
         bigint.cpp
-        bigint.h
-gtest_main.cpp bigint_unittest.cpp)
+        gtest_main.cpp
+        bigint_unittest.cpp)
 
 add_subdirectory(lib/googletests)
 include_directories(lib/googletests/include)
